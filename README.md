@@ -1,51 +1,18 @@
-# Mailspring Theme Starter
+# Mailspring Solarized Dark Theme
 
-The Mailspring Theme Starter is a basic starting point for creating a theme for
-the [Mailspring](http://www.getmailspring.com/) email client.
+![Theme screenshot](screenshot/solarized-dark.jpg)
 
-<img src="https://raw.githubusercontent.com/Foundry376/Mailspring-Theme-Starter/master/screenshot/custom-theme.png" />
+## Note
 
-## Getting Started
+It currently doesn't look very good.
 
-Creating a new theme in Mailspring is easy! Here's how you can do it.
+## Setup
 
-1. Fork this repo or download the code. Add a name, display name, title, and
-   description for your theme to `package.json`, and change the directory name
-   to match.
+1. Download and extract this repository somewhere
+2. Open Mailspring and install the theme by going to `Mailspring > Install New Theme...` and selecting the directory.
+3. Change the theme in `Mailspring > Change Theme`
 
-2. Open Mailspring  and install the theme by going to `Mailspring > Install New Theme...`
-   and selecting the directory.
-
-3. Choose `Developer > Run With Debug Flags` for easier debugging.
-
-4. Now, you can start playing with the theme! It's installed in
-   `~/Library/Application Support/Mailspring/packages/THEME_NAME` (on macOS), so
-   open it from there. Most of Mailspring's React components are derived from
-   the core variables defined in `ui-variables.less`, and any changes you make
-   there will override the defaults for Mailspring. You can also add more LESS
-   files in `styles` (ideally, separated into logical components like
-   `thread-list.less`) to make your own specific changes. To reload the theme,
-   just open the console (`Developer > Toggle Developer Tools`) and type
-
-   ```
-   AppEnv.themes.setActiveTheme('ui-light');
-   AppEnv.themes.setActiveTheme('your-theme-name');
-   ```
-
-5. Once you're happy with your theme, check how it looks in the theme picker
-   (`Mailspring > Change Theme...`). We use your UI variables to pull the
-   colors, but if you want to add your own selections to the color palette,
-   create a `theme-colors.less` file that includes any of the variables that you
-   want to change, and they'll only affect the theme preview. Here are the
-   variables, on the left, with the part of the theme preview that they match:
-
-   ```
-   @background-secondary:     BACKGROUND_COLOR
-   @text-color:               TEXT_COLOR, FIRST_SWATCH_COLOR
-   @component-active-color:   MIDDLE_SWATCH_COLOR
-   @toolbar-background-color: LAST_SWATCH_COLOR
-   @panel-background-color:   STRIP_COLOR
-   ```
+Based on [Mailspring-Theme-Starter](https://github.com/Foundry376/Mailspring-Theme-Starter)
 
 ## Structure
 
@@ -59,3 +26,11 @@ Creating a new theme in Mailspring is easy! Here's how you can do it.
 ├── LICENSE.md             # License with usage rights
 └── README.md              # Info about your theme and how to use it
 ```
+
+## License
+
+Licensed under the [MIT License](https://nemo.mit-license.org/). See LICENSE file for details.
+
+## Credits
+
+All colors based on [upstream solarized](https://github.com/altercation/solarized).
